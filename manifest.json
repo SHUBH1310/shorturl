@@ -1,0 +1,19 @@
+{
+
+  "manifest_version": 2,
+  "name": "urlShortner",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/eslint-example",
+  "description": "Converts the long URL into short URL",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+"content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["addons.js"]
+    }
+  ]
+}
